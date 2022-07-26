@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Menu from "../components/Menu";
-import { ICourse, ICategories } from "../types";
 import { useState } from "react";
 import CoursesTab from "../tabs/CoursesTab";
 import MainTab from "../tabs/MainTab";

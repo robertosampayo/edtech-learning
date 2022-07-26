@@ -31,7 +31,7 @@ Buscamos llevar a cabo esta nueva funcionalidad y es acá donde vos podes ayudar
   
 ## Arquitectura Frontend
 
-El desarrollo se llevo a cabo haciendo uso de Context Api como estado global de la aplicacion y Nextjs para renderizar el contenido del sitio del lado del servidor, la estructura del proyecto de realiza por medio de componentes mini modulos para enriquecer los componentes padres mas complejos, ademas de el uso de dummy components por encima de smart components dejando estos ultimos en el nivel mas alto de la aplicacion.
+El desarrollo se llevo a cabo haciendo uso de Context Api como estado global de la aplicacion y Nextjs para renderizar el contenido del sitio del lado del servidor, la estructura del proyecto se realiza por medio de componentes mini modulos para enriquecer los componentes padres mas complejos, ademas de el uso de dummy components por encima de smart components dejando estos ultimos en el nivel mas alto de la aplicacion.
 
 La aplicacion se desarrollo pensando en consumir un servicio REST API pero es flexible para utilizar Graphql u otro servicio sin problemas.
 
@@ -57,7 +57,19 @@ y luego
 npm run dev
 
 ```
+Gracias por haber llegado hasta aca 🙏🏼 Happy Coding, Happy Life!
 
+A Great character once said:
+> It's not who you are underneath, but what you do that defines you
+
+.
+.
+.
+.
+.
+.
+
+* [Live Project](https://edtech-learning-p2ijhqbdv-jrobertosampayo.vercel.app/) 🚀
 
 
 

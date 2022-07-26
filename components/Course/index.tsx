@@ -11,19 +11,25 @@ import {
 import React from "react";
 
 const Course: React.FunctionComponent<ICourseProps> = (props) => {
+  const IFrameVideo = React.memo(() => {
+    return (
+      <iframe
+        title={props.course.title}
+        src={props.course.video}
+        width="640"
+        height="360"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    );
+  });
+
   return (
     <CourseWrapper>
       <section>
         <Video>
-          <iframe
-            title={props.course.title}
-            src={props.course.video}
-            width="640"
-            height="360"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <IFrameVideo />
         </Video>
         <Content>
           <RankerSection

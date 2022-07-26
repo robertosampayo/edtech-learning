@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -20,7 +19,7 @@ const Button = styled.button`
 interface IFiltersProps {
   onLeave?: () => void;
   onHover?: () => void;
-  onClick?: () => void;
+  onClick?: (event: any) => void;
   icon: React.ReactNode;
   ariaLevel: string;
 }

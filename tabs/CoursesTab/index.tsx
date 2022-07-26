@@ -39,6 +39,11 @@ const CoursesTab = (props: {
       type: Actions.SAVE_COURSES,
       payload: props.courses,
     });
+
+    dispatch({
+      type: Actions.SET_COURSE,
+      payload: props.courses[0],
+    });
   }, []);
   const searchCourse = (text: string) => {
     if (text === "") {
@@ -62,14 +67,20 @@ const CoursesTab = (props: {
           },
         }}
       >
-        <Courses
-          onSearch={searchCourse}
-          courses={coursesFiltered === null ? props.courses : coursesFiltered}
-          categories={props.categories}
-        />
-        <Course
-          course={state.course === null ? props.courses[0] : state.course}
-        />
+        {coursesFiltered !== null ? (
+          <Courses
+            onSearch={searchCourse}
+            courses={coursesFiltered}
+            categories={props.categories}
+          />
+        ) : (
+          <div>Loading ...</div>
+        )}
+        {state.course !== null ? (
+          <Course course={state.course} />
+        ) : (
+          <div>Loading ...</div>
+        )}
       </motion.div>
     </CourseTabWrapper>
   );

@@ -15,7 +15,8 @@ export const InputSearchWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 20.5rem;
-    position: relative;
+    position: absolute;
+    right: 0;
   `;
 
 export const CloseButtonWrapper = styled.div`

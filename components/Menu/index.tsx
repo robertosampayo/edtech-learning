@@ -50,8 +50,11 @@ const MenuItem = (props: IMenuItemProps) => {
   );
 };
 
-const Menu = (props: { onChangeTab: (tab: string) => void }) => {
-  const [tabActive, setTabActive] = useState<string>(TABS.COURSES);
+const Menu = (props: {
+  onChangeTab: (tab: string) => void;
+  mainTab: string;
+}) => {
+  const [tabActive, setTabActive] = useState<string>(props.mainTab);
 
   const handleClick = (tab) => {
     setTabActive(tab);

@@ -1,6 +1,7 @@
 import Ranker from "../../../Ranker";
 import PillSmall from "../../../PillSmall";
 import styled from "styled-components";
+import React from "react";
 
 interface IRankerSection {
   rank: number;
@@ -26,4 +27,4 @@ const RankerSection = (props: IRankerSection) => {
   );
 };
 
-export default RankerSection;
+export default React.memo(RankerSection);

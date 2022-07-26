@@ -11,6 +11,7 @@ import SettingsTab from "../tabs/SettingsTab";
 import { TABS } from "../contants";
 import Head from "next/head";
 import * as CONTANTS from "../contants";
+import React from "react";
 
 const Main = styled.main`
   display: grid;
@@ -35,8 +36,8 @@ const Board = styled.section`
   }
 `;
 
-export default function Home(props) {
-  const [tab, setTab] = useState("COURSES");
+function Home(props) {
+  const [tab, setTab] = useState(TABS.COURSES);
   const changeTab = (tab: string) => {
     setTab(tab);
   };
@@ -70,13 +71,19 @@ export default function Home(props) {
     <Main>
       <Head>
         <title>Henry</title>
+        <meta
+          name="description"
+          content="Somos la primera academia de tecnología que invierte en la educación de las personas en Latinoamérica. Estudiar en Edtech tiene cero costo inicial, los estudiantes pagan solo cuando consiguen un empleo bien remunerado. Puedes convertirte en un Full Stack Developer o Data Scientist a cero costo inicial."
+        ></meta>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <Menu onChangeTab={changeTab} />
+      <Menu onChangeTab={changeTab} mainTab={tab} />
       <Board>{loadTab(tab)}</Board>
     </Main>
   );
 }
+
+export default React.memo(Home);
 
 export async function getStaticProps() {
   const data = await import("../db.json");

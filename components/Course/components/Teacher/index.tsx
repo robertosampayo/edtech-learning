@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 interface ITeacher {
@@ -35,4 +36,4 @@ const Teacher = (props: ITeacher) => {
   );
 };
 
-export default Teacher;
+export default React.memo(Teacher);

@@ -6,14 +6,12 @@ import React, {
   useState,
 } from "react";
 import PillBoxButton from "../../../PillBoxButton";
-import { IoCloseSharp } from "react-icons/io5";
+
 import {
-  CloseButtonWrapper,
   InputSearch,
   InputSearchWrapper,
   SearchButtonWrapper,
   SearchIcon,
-  InputMask,
 } from "./Search.styles";
 import { debounce } from "lodash";
 import { motion } from "framer-motion";
@@ -23,10 +21,6 @@ interface ISearchProps {
 }
 
 const Search: React.FunctionComponent<ISearchProps> = (props) => {
-  const [showSearch, setShowSearch] = useState(false);
-
-  const [mantainSearch, setMantainSearch] = useState(false);
-  const [hoverIsRemoved, setRemoveHover] = useState(false);
   const [text, setText] = useState("");
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -41,29 +35,22 @@ const Search: React.FunctionComponent<ISearchProps> = (props) => {
     return debounce(handleInput, 800);
   }, []);
 
-  const showSearchInput = () => {
+  const focus = (event) => {
+    event.preventDefault();
     setText("");
-    setShowSearch(true);
-    setMantainSearch(true);
-    setRemoveHover(true);
-    setTimeout(() => inputRef?.current?.focus(), 0);
-  };
 
-  const closeSearch = () => {
-    setMantainSearch(false);
-    setRemoveHover(false);
-  };
-
-  const onHoverSearch = () => (hoverIsRemoved ? null : setShowSearch(true));
-  const onLeaveSearch = () => {
-    setTimeout(() => inputRef?.current?.focus(), 0);
-    setShowSearch(false);
+    setTimeout(() => {
+      if (inputRef.current && !inputRef.current.contains(event.target)) {
+        inputRef.current.value = "";
+        inputRef?.current?.focus();
+      }
+    }, 0);
   };
 
   useEffect(() => {
-    const handleClickOutside = (event: any) => {
+    const handleClickOutside = (event) => {
       if (inputRef.current && !inputRef.current.contains(event.target)) {
-        closeSearch();
+        inputRef.current.value = "";
       }
     };
     document.addEventListener("click", handleClickOutside, true);
@@ -85,17 +72,15 @@ const Search: React.FunctionComponent<ISearchProps> = (props) => {
 
   return (
     <>
-      <SearchButtonWrapper>
-        <PillBoxButton
-          ariaLevel={"search-icon"}
-          onClick={showSearchInput}
-          onHover={onHoverSearch}
-          onLeave={onLeaveSearch}
-          icon={<SearchIcon size="1.5rem" />}
-        />
-      </SearchButtonWrapper>
+      <InputSearchWrapper>
+        <SearchButtonWrapper>
+          <PillBoxButton
+            ariaLevel={"search-icon"}
+            onClick={focus}
+            icon={<SearchIcon size="1.5rem" />}
+          />
+        </SearchButtonWrapper>
 
-      {showSearch ? (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -106,37 +91,15 @@ const Search: React.FunctionComponent<ISearchProps> = (props) => {
             },
           }}
         >
-          <InputMask />
+          <InputSearch
+            onClick={focus}
+            data-testid="search-input"
+            ref={inputRef}
+            placeholder="Type a course name ..."
+            onChange={debounceSearch}
+          />
         </motion.div>
-      ) : null}
-      {mantainSearch ? (
-        <InputSearchWrapper>
-          <CloseButtonWrapper>
-            <PillBoxButton
-              ariaLevel="close-search"
-              onClick={closeSearch}
-              icon={<IoCloseSharp size="1.5rem" color="#9c9b9b" />}
-            />
-          </CloseButtonWrapper>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              default: {
-                duration: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              },
-            }}
-          >
-            <InputSearch
-              data-testid="search-input"
-              ref={inputRef}
-              placeholder="Type a course name ..."
-              onChange={debounceSearch}
-            />
-          </motion.div>
-        </InputSearchWrapper>
-      ) : null}
+      </InputSearchWrapper>
     </>
   );
 };

@@ -8,6 +8,7 @@ import {
 } from "./ChapterPill.styles";
 import { IoMdTime } from "react-icons/io";
 import { IChapter } from "../../types";
+import React from "react";
 
 interface IChapterProps {
   chapter: IChapter;
@@ -39,4 +40,4 @@ const ChapterPill = (props: IChapterProps) => {
   );
 };
 
-export default ChapterPill;
+export default React.memo(ChapterPill);

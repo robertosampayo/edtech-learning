@@ -1,0 +1,70 @@
+{
+  "course": {
+    "id": "165631",
+    "title": "English for career development",
+    "video": "https://player.vimeo.com/video/352587339?h=b68fee49d2",
+    "cover": "/images/course2.jpg",
+    "rank": 5,
+    "countRank": 112,
+    "level": "Intermediate",
+    "status": "Completed",
+    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+    "duration": 663,
+    "countChapters": 6,
+    "category": "English",
+    "teacher": {
+      "id": "12356",
+      "name": "Courtney Mc`Gregor",
+      "description": "Profesional English Teacher",
+      "avatar": ""
+    },
+    "chapters": [
+      {
+        "id": "1",
+        "title": "Intro",
+        "description": "Meet your teacher",
+        "duration": 33222
+      },
+      {
+        "id": "2",
+        "title": "Learn the basic",
+        "description": "Learning the basics in english",
+        "duration": 33222
+      },
+      {
+        "id": "3",
+        "title": "Chapter 3",
+        "description": "Deep in with phrasal verbs",
+        "duration": 33222
+      },
+      {
+        "id": "4",
+        "title": "Chapter 4",
+        "description": "Deep in with phrasal verbs 4",
+        "duration": 33222
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": 0,
+      "name": "English",
+      "icon": "/categories/gb.svg"
+    },
+    {
+      "id": 1,
+      "name": "Spanish",
+      "icon": "/categories/es.svg"
+    },
+    {
+      "id": 2,
+      "name": "French",
+      "icon": "/categories/fr.svg"
+    },
+    {
+      "id": 3,
+      "name": "Chinese",
+      "icon": "/categories/ch.svg"
+    }
+  ]
+}

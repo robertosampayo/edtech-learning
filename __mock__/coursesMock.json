@@ -1,0 +1,302 @@
+{
+  "courses": [
+    {
+      "id": "165631",
+      "title": "English for career development",
+      "video": "https://player.vimeo.com/video/352587339?h=b68fee49d2",
+      "cover": "/images/course2.jpg",
+      "rank": 5,
+      "countRank": 112,
+      "level": "Intermediate",
+      "status": "Completed",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+      "duration": 663,
+      "countChapters": 6,
+      "category": "English",
+      "teacher": {
+        "id": "12356",
+        "name": "Courtney Mc`Gregor",
+        "description": "Profesional English Teacher",
+        "avatar": ""
+      },
+      "chapters": [
+        {
+          "id": "1",
+          "title": "Intro",
+          "description": "Meet your teacher",
+          "duration": 33222
+        },
+        {
+          "id": "2",
+          "title": "Learn the basic",
+          "description": "Learning the basics in english",
+          "duration": 33222
+        },
+        {
+          "id": "3",
+          "title": "Chapter 3",
+          "description": "Deep in with phrasal verbs",
+          "duration": 33222
+        },
+        {
+          "id": "4",
+          "title": "Chapter 4",
+          "description": "Deep in with phrasal verbs 4",
+          "duration": 33222
+        }
+      ]
+    },
+    {
+      "id": "165632",
+      "title": "Spanish for career development",
+      "video": "https://player.vimeo.com/video/112950260?h=4a986a1388",
+      "cover": "/images/course1.webp",
+      "rank": 3,
+      "countRank": 112,
+      "level": "Advance",
+      "status": "Active",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+      "duration": 663,
+      "countChapters": 6,
+      "category": "Spanish",
+      "teacher": {
+        "id": "12356",
+        "name": "Maria Belen",
+        "description": "Profesional Spanish Teacher",
+        "avatar": ""
+      },
+      "chapters": [
+        {
+          "id": "1",
+          "title": "Intro",
+          "description": "Meet your teacher",
+          "duration": 33222
+        },
+        {
+          "id": "2",
+          "title": "Learn the basic",
+          "description": "Learning the basics in english",
+          "duration": 33222
+        },
+        {
+          "id": "3",
+          "title": "Chapter 3",
+          "description": "Deep in with phrasal verbs",
+          "duration": 33222
+        },
+        {
+          "id": "4",
+          "title": "Chapter 4",
+          "description": "Deep in with phrasal verbs 4",
+          "duration": 33222
+        }
+      ]
+    },
+    {
+      "id": "165633",
+      "title": "Chinese for career development",
+      "video": "https://player.vimeo.com/video/352587339?h=b68fee49d2",
+      "cover": "/images/course3.jpg",
+      "rank": 2,
+      "countRank": 112,
+      "level": "Beginner",
+      "status": "Active",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+      "duration": 663,
+      "countChapters": 6,
+      "category": "Chinese",
+      "teacher": {
+        "id": "12357",
+        "name": "Harry Macguire",
+        "description": "Profesional English Teacher",
+        "avatar": ""
+      },
+      "chapters": [
+        {
+          "id": "1",
+          "title": "Intro",
+          "description": "Meet your teacher",
+          "duration": 33222
+        },
+        {
+          "id": "2",
+          "title": "Learn the basic",
+          "description": "Learning the basics in english",
+          "duration": 33222
+        },
+        {
+          "id": "3",
+          "title": "Chapter 3",
+          "description": "Deep in with phrasal verbs",
+          "duration": 33222
+        },
+        {
+          "id": "4",
+          "title": "Chapter 4",
+          "description": "Deep in with phrasal verbs 4",
+          "duration": 33222
+        }
+      ]
+    },
+    {
+      "id": "165634",
+      "title": "French for beginners",
+      "video": "https://player.vimeo.com/video/209374323?h=75b2f894e9",
+      "cover": "/images/course4.jpg",
+      "rank": 5,
+      "countRank": 112,
+      "level": "Beginner",
+      "status": "Completed",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+      "duration": 663,
+      "countChapters": 6,
+      "category": "French",
+      "teacher": {
+        "id": "12357",
+        "name": "Harry Macguire",
+        "description": "Profesional French Teacher",
+        "avatar": ""
+      },
+      "chapters": [
+        {
+          "id": "1",
+          "title": "Intro",
+          "description": "Meet your teacher",
+          "duration": 33222
+        },
+        {
+          "id": "2",
+          "title": "Learn the basic",
+          "description": "Learning the basics in english",
+          "duration": 33233
+        },
+        {
+          "id": "3",
+          "title": "Chapter 3",
+          "description": "Deep in with phrasal verbs",
+          "duration": 33222
+        },
+        {
+          "id": "4",
+          "title": "Chapter 4",
+          "description": "Deep in with phrasal verbs 4",
+          "duration": 33222
+        }
+      ]
+    },
+    {
+      "id": "165635",
+      "title": "Spanish for all",
+      "video": "https://player.vimeo.com/video/41420271",
+      "cover": "/images/course5.jpg",
+      "rank": 4,
+      "countRank": 112,
+      "level": "Beginner",
+      "status": "Completed",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+      "duration": 663,
+      "countChapters": 6,
+      "category": "Spanish",
+      "teacher": {
+        "id": "12357",
+        "name": "Harry Macguire",
+        "description": "Profesional English Teacher",
+        "avatar": ""
+      },
+      "chapters": [
+        {
+          "id": "1",
+          "title": "Intro",
+          "description": "Meet your teacher",
+          "duration": 33222
+        },
+        {
+          "id": "2",
+          "title": "Learn the basic",
+          "description": "Learning the basics in english",
+          "duration": 33222
+        },
+        {
+          "id": "3",
+          "title": "Chapter 3",
+          "description": "Deep in with phrasal verbs",
+          "duration": 33222
+        },
+        {
+          "id": "4",
+          "title": "Chapter 4",
+          "description": "Deep in with phrasal verbs 4",
+          "duration": 33222
+        }
+      ]
+    },
+    {
+      "id": "165636",
+      "title": "Learning English strategy: how and what",
+      "video": "https://player.vimeo.com/video/680788513",
+      "cover": "/images/course2.jpg",
+      "rank": 5,
+      "countRank": 112,
+      "level": "Beginner",
+      "status": "Active",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since ...",
+      "duration": 663,
+      "countChapters": 6,
+      "category": "English",
+      "teacher": {
+        "id": "12357",
+        "name": "Harry Macguire",
+        "description": "Profesional English Teacher",
+        "avatar": ""
+      },
+      "chapters": [
+        {
+          "id": "1",
+          "title": "Intro",
+          "description": "Meet your teacher",
+          "duration": 33222
+        },
+        {
+          "id": "2",
+          "title": "Learn the basic",
+          "description": "Learning the basics in english",
+          "duration": 33222
+        },
+        {
+          "id": "3",
+          "title": "Chapter 3",
+          "description": "Deep in with phrasal verbs",
+          "duration": 33222
+        },
+        {
+          "id": "4",
+          "title": "Chapter 4",
+          "description": "Deep in with phrasal verbs 4",
+          "duration": 33222
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "English",
+      "icon": "/categories/gb.svg"
+    },
+    {
+      "id": 1,
+      "name": "Spanish",
+      "icon": "/categories/es.svg"
+    },
+    {
+      "id": 2,
+      "name": "French",
+      "icon": "/categories/fr.svg"
+    },
+    {
+      "id": 3,
+      "name": "Chinese",
+      "icon": "/categories/ch.svg"
+    }
+  ]
+}

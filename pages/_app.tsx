@@ -1,32 +1,16 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-`
-
-interface ThemeInterface {
-  colors: {
-    primary: string
-  }
-}
-
-const theme: ThemeInterface = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
+import { GlobalStyle, theme } from "../styles/global.styles";
+import { ThemeProvider } from "styled-components";
+import { CoursesProvider } from "../context/courses/state";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <CoursesProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </CoursesProvider>
     </>
-  )
+  );
 }

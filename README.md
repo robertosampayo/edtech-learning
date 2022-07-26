@@ -69,7 +69,7 @@ A Great character once said:
 .
 .
 
-* [Live Project](https://edtech-learning-p2ijhqbdv-jrobertosampayo.vercel.app/) 🚀
+* [Live Project](https://edtech-learning.vercel.app/) 🚀
 
 
 

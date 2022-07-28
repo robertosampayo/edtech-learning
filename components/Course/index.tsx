@@ -49,7 +49,7 @@ const Course: React.FunctionComponent<ICourseProps> = (props) => {
             <h2>Course`s content</h2>
             <p>
               {props.course.countChapters} lectures ∙{" "}
-              {new Date(props.course.duration).getHours()}
+              {new Date(props.course.duration).getHours()} Hours
             </p>
           </CourseContentTitle>
           {props.course.chapters.length > 0

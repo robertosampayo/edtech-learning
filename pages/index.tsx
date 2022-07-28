@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Menu from "../components/Menu";
-import { useState } from "react";
+import React, { useState } from "react";
 import CoursesTab from "../tabs/CoursesTab";
 import MainTab from "../tabs/MainTab";
 import ScheduleTab from "../tabs/ShceduleTab";
@@ -11,7 +11,6 @@ import SettingsTab from "../tabs/SettingsTab";
 import { TABS } from "../contants";
 import Head from "next/head";
 import * as CONTANTS from "../contants";
-import React from "react";
 
 const Main = styled.main`
   display: grid;

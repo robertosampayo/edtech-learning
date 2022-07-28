@@ -17,14 +17,14 @@ export const Chapter = styled.div`
 
 export const ChapterColor = styled.div<{ color?: boolean }>`
     background: ${(props) =>
-    props.color === true ? props.color : props.theme.colors.chapter1};
+    props.color === true ? props.color : props.theme.colors.orange};
     width: 100%;
     height: 100%;
     border-radius: 1rem 0 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid ${(props) => props.theme.colors.chapter1};
+    border: 1px solid ${(props) => props.theme.colors.orange};
 `;
 
 export const ChapterContent = styled.div`

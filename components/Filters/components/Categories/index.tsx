@@ -1,11 +1,10 @@
 import { ICategories } from "../../../../types";
 import React from "react";
 import styled from "styled-components";
-import Category from "../Category";
-import { useCourses } from "../../../../context/courses/state";
 import * as CONTANTS from "../../../../contants";
+import Category from "../Category";
 
-export const CategoriesWrapper = styled.section`
+export const CategoriesWrapper = styled.ul`
   width: 100%;
   height: auto;
   display: flex;
@@ -13,6 +12,7 @@ export const CategoriesWrapper = styled.section`
   align-items: center;
   justify-content: flex-start;
   gap: 1.5rem;
+  padding: 0;
 
   @media screen and (max-width: ${CONTANTS.DEVICE.MOBILE}) {
     flex-direction: column;
@@ -20,32 +20,26 @@ export const CategoriesWrapper = styled.section`
 `;
 
 interface IFiltersProps {
+  active: string;
   categories: ICategories[];
   onClick: (category: string) => void;
 }
 
 const Categories: React.FunctionComponent<IFiltersProps> = ({
+  active,
   categories,
   onClick,
 }) => {
-  const { state } = useCourses();
   return (
     <CategoriesWrapper>
       {categories !== null
-        ? categories.map((category) => {
-            return (
-              <Category
-                key={category.id}
-                title={category.name}
-                image={category.icon}
-                active={
-                  state.filters.category.toLocaleLowerCase() ===
-                  category.name.toLocaleLowerCase()
-                }
-                onClick={() => onClick(category.name)}
-              />
-            );
-          })
+        ? categories.map((category) => (
+            <Category
+              category={category}
+              onClick={onClick}
+              active={active === category.name}
+            />
+          ))
         : null}
     </CategoriesWrapper>
   );

@@ -18,7 +18,7 @@ display: block;
 & > div > span {
   position: absolute;
   top: 2rem;
-  background: ${(props) => props.theme.colors.chapter1};
+  background: ${(props) => props.theme.colors.orange};
   width: 3rem;
   height: 3rem;
   border-radius: 100%;

@@ -40,7 +40,7 @@ export const InputSearch = styled.input`
 
 
   :focus {
-    border: ${(props) => `0.1rem solid ${props.theme.colors.chapter1}`};
+    border: ${(props) => `0.1rem solid ${props.theme.colors.orange}`};
     outline: none;
   }
 `;
@@ -62,7 +62,7 @@ export const InputMask = styled.input`
 
 
   :focus {
-    border: ${(props) => `0.1rem solid ${props.theme.colors.chapter1}`};
+    border: ${(props) => `0.1rem solid ${props.theme.colors.orange}`};
     outline: none;
   }
 `;

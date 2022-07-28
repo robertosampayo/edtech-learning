@@ -32,7 +32,7 @@ const Search: React.FunctionComponent<ISearchProps> = (props) => {
 
   const debounceSearch = useMemo(() => {
     // set text in state after delay
-    return debounce(handleInput, 800);
+    return debounce(handleInput, 400);
   }, []);
 
   const focus = (event) => {

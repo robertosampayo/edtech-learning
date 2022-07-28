@@ -16,7 +16,7 @@ interface ThemeInterface {
     disabledDark: string,
     grayElements: string,
     rank: string,
-    chapter1: string,
+    orange: string,
     cahpter2: string,
   },
   utils: {
@@ -47,7 +47,7 @@ export const theme: ThemeInterface = {
     disabledDark: "#50413a",
     grayElements: "#666462",
     rank: "#edbe75",
-    chapter1: "#d97356",
+    orange: "#d97356",
     cahpter2: "#eebc74",
   },
   utils: {

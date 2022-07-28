@@ -57,7 +57,11 @@ const Filters: React.FunctionComponent<IFiltersProps> = (props) => {
         active={state.filters.status}
       />
       <div>
-        <Categories categories={props.categories} onClick={filterByCategory} />
+        <Categories
+          categories={props.categories}
+          onClick={filterByCategory}
+          active={state.filters.category}
+        />
 
         <PillBoxButton
           ariaLevel="filter-icon"
